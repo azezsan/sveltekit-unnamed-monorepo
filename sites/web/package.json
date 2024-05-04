@@ -13,7 +13,7 @@
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
 		"test:unit": "bun test",
-		"use-bun": "bun -b --env-file=../../.env"
+		"use-bun": "bun --env-file=../../.env"
 	},
 	"dependencies": {
 		"ui": "workspace:*",

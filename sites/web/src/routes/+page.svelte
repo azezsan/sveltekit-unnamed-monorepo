@@ -1,17 +1,20 @@
-<script>
+<script lang="ts">
 	import { Button } from 'ui';
 
 	let { data } = $props();
 </script>
 
 <div class="flex h-screen items-center justify-evenly">
-	<Button>I'm a button!</Button>
+	<Button>I'm a button from ui</Button>
 
 	{#await data.users}
-		<h3>fetching users...</h3>
+		<h2>fetching users...</h2>
 	{:then users}
-		{#each users as user}
-			<div>{user.name}</div>
-		{/each}
+		<div class="flex flex-col gap-2">
+			<h2>Users from db</h2>
+			{#each users as user}
+				<div>{user.name}</div>
+			{/each}
+		</div>
 	{/await}
 </div>

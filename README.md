@@ -1,14 +1,8 @@
-# Turborepo starter
+# Sveltekit Unnamed Stack ❓
 
-This is an official starter Turborepo.
+The "Sveltekit Unnamed Stack" is designed to be minimal and extendable and tries to stick to sveltekit core whenever possible, `sites` ar built with the sveltekit barebones Skeleton scaffold, while the `packages` are built using the sveltekit barebone Library scaffold with some modifications in package.json and tsconfig to make them easier to share
 
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+this template is perfect for any kind of project that needs a shared ui and db, you can clone this repo or fork it and add your additional needs like stripe for payments or workos for auth whatever you like
 
 ## What's inside?
 
@@ -16,21 +10,39 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@acme/web`: a minimal [SvelteKit](https://kit.svelte.dev/) example app, using `@acme/ui` and `@acme/db`
+- `@acme/ui`: Start of a UI package for the sites using shadcn-svelte
+- `@acme/db`: Typesafe db calls using Drizzle & Planetscale
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-### Utilities
+> In this template, we use `@acme` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name. You can use find-and-replace to change all the instances of `@acme` to something like `@my-company` or `@project-name`.
 
-This Turborepo has some additional tools already setup for you:
+## Quick Start
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+> **Note**
+> The db package is preconfigured to use PlanetScale If you're using something else, make the necessary modifications to the [schema](./packages/db/src/lib/schema.ts) as well as the [client](./packages/db/src/lib/server/index.ts) and the [drizzle config](./packages/db/drizzle.config.ts).
+
+> **Note**
+> all package.json are configured to use bun workspaces If you would like to use a different package manager, make the necessary modifications to the [Root](./package.json), [@acme/ui](./packages/ui/package.json), [@acme/db](./packages/db/package.json) and the [@acme/web](./sites/web/package.json), Additionally if you're planning to use `vitest`, add it to all the projects you wish to use it on and change the test files to use vitest instead of `bun:test`.
+
+if you're using bun make sure you are at the latest version, run the following command:
+```bash
+bun upgrade
+```
+### Setup dependencies
+
+```bash
+# Install dependencies
+bun i
+
+# Configure enviorment variables
+# There is an `.env.example` in the root directory you can use for reference
+cp .env.example .env
+
+# Push the Drizzle schema to the database
+bun db:push
+```
 
 ### Build
 
@@ -38,7 +50,7 @@ To build all apps and packages, run the following command:
 
 ```
 cd my-turborepo
-pnpm build
+bun run build
 ```
 
 ### Develop
@@ -47,35 +59,5 @@ To develop all apps and packages, run the following command:
 
 ```
 cd my-turborepo
-pnpm dev
+bun run dev
 ```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from 'ui';
+	import { Button } from '@acme/ui';
 
 	let { data } = $props();
 </script>

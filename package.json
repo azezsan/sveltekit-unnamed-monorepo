@@ -14,9 +14,6 @@
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
-  "engines": {
-    "node": ">=18"
-  },
   "packageManager": "bun@1.1.7",
   "workspaces": [
     "sites/*",

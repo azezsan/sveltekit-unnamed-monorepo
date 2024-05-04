@@ -1,10 +1,11 @@
 import { drizzle } from "drizzle-orm/planetscale-serverless";
 import { Client } from "@planetscale/database";
-import { connectionStr } from "./config.js";
-import * as schema from "./schema.js";
+import * as schema from "../schema";
+
+if (!process.env.DB_URL) throw new Error("DB_URL not set")
 
 const client = new Client({
-    url: connectionStr.href
+    url: process.env.DB_URL
 });
 
 export const db = drizzle(client, { schema });

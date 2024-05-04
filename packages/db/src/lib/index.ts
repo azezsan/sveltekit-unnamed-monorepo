@@ -1,3 +1,3 @@
 // Reexport your entry components here
-export { db } from "./server/index.js"
-export * from "./server/schema.js"
+export { db } from "./server/"
+export * from "./schema"

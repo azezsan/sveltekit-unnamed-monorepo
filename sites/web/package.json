@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "bun use-bun vite dev",
-		"build": "bun use-bun vite build",
-		"preview": "bun use-bun vite preview",
+		"dev": "bun use-env vite dev",
+		"build": "bun use-env vite build",
+		"preview": "bun use-env vite preview",
 		"test": "bun run test:integration && bun run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -13,7 +13,7 @@
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
 		"test:unit": "bun test",
-		"use-bun": "bun --env-file=../../.env"
+		"use-env": "bun --env-file=../../.env"
 	},
 	"dependencies": {
 		"ui": "workspace:*",

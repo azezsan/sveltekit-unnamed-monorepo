@@ -4,12 +4,12 @@
 	"scripts": {
 		"prepare": "svelte-kit sync",
 		"dev": "svelte-package --watch",
-		"dev:vite": "bun use-bun vite dev",
+		"dev:vite": "bun use-env vite dev",
 		"build": "bun run buildAndPackage",
-		"build:vite": "bun use-bun vite build",
-		"buildAndPackage": "bun run build:vite && bun use-bun run package",
-		"preview": "bun use-bun vite preview",
-		"package": "bun use-bun run prepare && bun use-bun run svelte-package && publint",
+		"build:vite": "bun use-env vite build",
+		"buildAndPackage": "bun run build:vite && bun run package",
+		"preview": "bun use-env vite preview",
+		"package": "bun  run prepare && bun  run svelte-package && publint",
 		"prepublishOnly": "bun run package",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -18,7 +18,7 @@
 		"test": "bun run test:integration && bun run test:unit",
 		"test:integration": "playwright test",
 		"test:unit": "bun test",
-		"use-bun": "bun --env-file=../../.env"
+		"use-env": "bun --env-file=../../.env"
 	},
 	"exports": {
 		".": {

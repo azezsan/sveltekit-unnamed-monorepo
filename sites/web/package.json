@@ -16,8 +16,8 @@
 		"use-env": "bun --env-file=../../.env"
 	},
 	"dependencies": {
-		"ui": "workspace:*",
-		"db": "workspace:*"
+		"@acme/ui": "workspace:*",
+		"@acme/db": "workspace:*"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.43.1",

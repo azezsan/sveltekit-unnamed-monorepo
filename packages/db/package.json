@@ -68,5 +68,6 @@
   },
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "type": "module"
+  "type": "module",
+  "packageManager": "bun@1.1.7"
 }

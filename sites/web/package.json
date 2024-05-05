@@ -43,5 +43,6 @@
 		"typescript": "^5.4.5",
 		"vite": "^5.2.10"
 	},
-	"type": "module"
+	"type": "module",
+	"packageManager": "bun@1.1.7"
 }

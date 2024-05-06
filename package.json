@@ -6,8 +6,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write .",
-    "db:push": "bun --filter db push",
-    "db:studio": "bun --filter db studio"
+    "db:push": "bun --filter @acme/db push",
+    "db:studio": "bun --filter @acme/db studio"
   },
   "devDependencies": {
     "@types/bun": "^1.1.1",

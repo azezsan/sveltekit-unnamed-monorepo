@@ -5,6 +5,7 @@
   ],
   "rangeStrategy": "bump",
   "updateInternalDeps": true,
+  "platformAutomerge": true,
   "packageRules": [
     {
       "matchUpdateTypes": [

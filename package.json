@@ -10,7 +10,7 @@
     "db:studio": "bun --filter @acme/db studio"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.2",
+    "@types/bun": "^1.1.3",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },

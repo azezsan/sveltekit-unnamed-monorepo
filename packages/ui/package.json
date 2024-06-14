@@ -43,7 +43,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.44.1",
 		"@sveltejs/adapter-vercel": "^5.3.2",
-		"@sveltejs/kit": "^2.5.12",
+		"@sveltejs/kit": "^2.5.14",
 		"@sveltejs/package": "^2.3.2",
 		"@types/eslint": "^8.56.10",
 		"@typescript-eslint/eslint-plugin": "^7.13.0",

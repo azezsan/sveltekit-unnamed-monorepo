@@ -35,7 +35,7 @@
 		"svelte": "^5.0.0-next.166"
 	},
 	"dependencies": {
-		"bits-ui": "^0.21.10",
+		"bits-ui": "^0.21.11",
 		"clsx": "^2.1.1",
 		"tailwind-merge": "^2.3.0",
 		"tailwind-variants": "^0.2.1"

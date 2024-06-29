@@ -63,7 +63,7 @@
     "tslib": "^2.6.3",
     "typescript": "^5.5.2",
     "vite": "^5.3.2",
-    "drizzle-kit": "^0.22.7",
+    "drizzle-kit": "^0.22.8",
     "mysql2": "^3.10.1"
   },
   "svelte": "./dist/index.js",

@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@planetscale/database": "^1.18.0",
-    "drizzle-orm": "^0.31.3"
+    "drizzle-orm": "^0.31.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.45.1",

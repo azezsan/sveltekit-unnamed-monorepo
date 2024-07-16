@@ -64,7 +64,7 @@
     "typescript": "^5.5.3",
     "vite": "^5.3.3",
     "drizzle-kit": "^0.23.0",
-    "mysql2": "^3.10.2"
+    "mysql2": "^3.10.3"
   },
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",

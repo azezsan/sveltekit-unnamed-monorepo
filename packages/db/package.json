@@ -45,7 +45,7 @@
     "drizzle-orm": "^0.32.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.45.2",
+    "@playwright/test": "^1.45.3",
     "@sveltejs/adapter-vercel": "^5.4.1",
     "@sveltejs/kit": "^2.5.18",
     "@sveltejs/package": "^2.3.2",

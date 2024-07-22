@@ -20,7 +20,7 @@
 		"@acme/db": "workspace:*"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.45.2",
+		"@playwright/test": "^1.45.3",
 		"@sveltejs/adapter-vercel": "^5.4.1",
 		"@sveltejs/kit": "^2.5.18",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",

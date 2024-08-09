@@ -48,7 +48,7 @@
     "@playwright/test": "^1.46.0",
     "@sveltejs/adapter-vercel": "^5.4.2",
     "@sveltejs/kit": "^2.5.20",
-    "@sveltejs/package": "^2.3.2",
+    "@sveltejs/package": "^2.3.3",
     "@types/eslint": "^8.56.11",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",

@@ -41,7 +41,7 @@
     "svelte": "^5.0.0-next.220"
   },
   "dependencies": {
-    "@planetscale/database": "^1.18.0",
+    "@planetscale/database": "^1.19.0",
     "drizzle-orm": "^0.33.0"
   },
   "devDependencies": {

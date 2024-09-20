@@ -41,7 +41,7 @@
 		"tailwind-variants": "^0.2.1"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.47.1",
+		"@playwright/test": "^1.47.2",
 		"@sveltejs/adapter-vercel": "^5.4.4",
 		"@sveltejs/kit": "^2.5.28",
 		"@sveltejs/package": "^2.3.5",

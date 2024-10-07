@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.47.2",
-    "@sveltejs/adapter-vercel": "^5.4.4",
+    "@sveltejs/adapter-vercel": "^5.4.5",
     "@sveltejs/kit": "^2.6.2",
     "@sveltejs/package": "^2.3.5",
     "@types/eslint": "^8.56.12",
